@@ -26,9 +26,6 @@
         }
     ],
     "extra": {
-        "branch-alias": {
-            "dev-master": "1.0-dev"
-        },
         "laravel": {
             "providers": [
                 "ksmz\\NanaLaravel\\NanaServiceProvider"
