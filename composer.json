@@ -1,0 +1,41 @@
+{
+    "name": "ksmz/nana-laravel",
+    "description": "Laravel package for ksmz/nana",
+    "type": "library",
+    "require": {
+        "php": ">=7.1.3",
+        "ksmz/nana": "dev-master",
+        "illuminate/support": "^5.5,<5.7",
+        "illuminate/config": "^5.5,<5.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "ksmz\\NanaLaravel\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ksmz\\NanaLaravel\\Tests\\": "Tests/"
+        }
+    },
+    "license": "BSD-2-Clause",
+    "authors": [
+        {
+            "name": "ksmz",
+            "email": "ksmz@amatsuka.me"
+        }
+    ],
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "ksmz\\NanaLaravel\\NanaServiceProvider"
+            ],
+            "aliases": {
+                "Nana": "ksmz\\NanaLaravel\\Facades\\Nana"
+            }
+        }
+    }
+}
