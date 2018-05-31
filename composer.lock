@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "900de812399f16e82fdab54a2cbadaf6",
+    "content-hash": "c2c8a99df6e7bb4e62d9d884bf3f3637",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -405,12 +405,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/matical/nana.git",
-                "reference": "0e6bbc52c6c7f341462505a129e3a014f6066aa4"
+                "reference": "4e41f5b92a6bad6e8bd0408dd0965c6cb076f5f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/matical/nana/zipball/0e6bbc52c6c7f341462505a129e3a014f6066aa4",
-                "reference": "0e6bbc52c6c7f341462505a129e3a014f6066aa4",
+                "url": "https://api.github.com/repos/matical/nana/zipball/4e41f5b92a6bad6e8bd0408dd0965c6cb076f5f3",
+                "reference": "4e41f5b92a6bad6e8bd0408dd0965c6cb076f5f3",
                 "shasum": ""
             },
             "require": {
@@ -419,7 +419,8 @@
             },
             "require-dev": {
                 "laravel/lumen-framework": "5.*",
-                "phpunit/phpunit": "~7.0"
+                "phpunit/phpunit": "~7.0",
+                "psy/psysh": "^0.9.4"
             },
             "type": "library",
             "autoload": {
@@ -438,7 +439,7 @@
                 }
             ],
             "description": "Yet another guzzle wrapper",
-            "time": "2018-05-30T02:29:47+00:00"
+            "time": "2018-05-31T03:03:04+00:00"
         },
         {
             "name": "nesbot/carbon",

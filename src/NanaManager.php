@@ -2,10 +2,9 @@
 
 namespace ksmz\NanaLaravel;
 
-use ksmz\nana\Fetch;
 use Illuminate\Contracts\Foundation\Application;
 
-/** @mixin \ksmz\nana\Fetch */
+/** @mixin \ksmz\NanaLaravel\LaravelFetch */
 class NanaManager
 {
     /**
@@ -34,7 +33,7 @@ class NanaManager
      * Retrieve a faucet instance.
      *
      * @param string $name
-     * @return \ksmz\nana\Fetch|mixed
+     * @return \ksmz\NanaLaravel\LaravelFetch
      */
     public function faucet($name = null)
     {
@@ -44,21 +43,25 @@ class NanaManager
     }
 
     /**
+     * Attempt to retrieve the faucet from the local cache.
+     *
      * @param string $name
-     * @return \ksmz\nana\Fetch|mixed
+     * @return \ksmz\NanaLaravel\LaravelFetch
      */
-    protected function fetch($name)
+    protected function fetch(string $name)
     {
         return $this->faucets[$name] ?? $this->resolve($name);
     }
 
     /**
-     * @param $name
-     * @return \ksmz\nana\Fetch
+     * Resolve the given faucet.
+     *
+     * @param string $name
+     * @return \ksmz\NanaLaravel\LaravelFetch
      */
-    protected function resolve($name)
+    protected function resolve(string $name)
     {
-        return new Fetch($this->getConfig($name));
+        return new LaravelFetch($this->getGuzzleConfig($name), $name);
     }
 
     /**
@@ -75,7 +78,7 @@ class NanaManager
      * @param $name
      * @return mixed
      */
-    protected function getConfig($name)
+    protected function getGuzzleConfig($name)
     {
         return $this->app['config']["nana.faucets.{$name}.guzzle_config"];
     }
