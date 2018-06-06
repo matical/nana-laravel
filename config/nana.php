@@ -17,7 +17,7 @@ return [
         */
         'default' => [
 
-            'default_disk'  => 'default',
+            'default_disk'  => env('FILESYSTEM_DRIVER', 'local'),
             'guzzle_config' => [
                 'http_errors' => false,
                 'headers'     => [
