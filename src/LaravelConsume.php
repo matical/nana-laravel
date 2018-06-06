@@ -40,6 +40,9 @@ class LaravelConsume extends Consume
                                 ->put($path, $this->stream(), $options);
     }
 
+    /**
+     * @return string|null
+     */
     protected function resolveDisk()
     {
         return config("nana.faucets.{$this->faucet}.default_disk");

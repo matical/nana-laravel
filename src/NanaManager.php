@@ -37,7 +37,7 @@ class NanaManager
      */
     public function faucet($name = null)
     {
-        $name = $name ?: $this->getDefaultFaucet();
+        $name = $name ?? $this->getDefaultFaucet();
 
         return $this->faucets[$name] = $this->fetch($name);
     }
@@ -76,7 +76,7 @@ class NanaManager
      * Retrieve the configuration for the respective faucet.
      *
      * @param $name
-     * @return mixed
+     * @return array|null
      */
     protected function getGuzzleConfig($name)
     {
