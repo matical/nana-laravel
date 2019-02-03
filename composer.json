@@ -5,8 +5,8 @@
     "require": {
         "php": ">=7.1",
         "ksmz/nana": "~0.1",
-        "illuminate/support": "^5.5,<=5.7",
-        "illuminate/config": "^5.5,<=5.7"
+        "illuminate/support": "^5.5,<=5.9",
+        "illuminate/config": "^5.5,<=5.9"
     },
     "autoload": {
         "psr-4": {
