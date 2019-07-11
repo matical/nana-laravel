@@ -69,7 +69,7 @@ class NanaManager
      */
     public function getDefaultFaucet()
     {
-        return $this->app['config']['nana.default'] ?? 'default';
+        return $this->app['config']['nana.default_faucet'] ?? 'default';
     }
 
     /**

@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'default' => env('NANA_FAUCET', 'default'),
+    'default_faucet' => env('NANA_FAUCET', 'default'),
 
     'faucets' => [
 
