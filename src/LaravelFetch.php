@@ -25,7 +25,7 @@ class LaravelFetch extends Fetch
      * @param array  $options
      * @param string $faucet
      */
-    public function __construct(array $options = [], string $faucet)
+    public function __construct(string $faucet, array $options = [])
     {
         parent::__construct($options);
         $this->faucet = $faucet;

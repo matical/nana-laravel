@@ -61,7 +61,7 @@ class NanaManager
      */
     protected function resolve(string $name)
     {
-        return new LaravelFetch($this->getGuzzleConfig($name), $name);
+        return new LaravelFetch($name, $this->getGuzzleConfig($name));
     }
 
     /**
