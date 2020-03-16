@@ -5,7 +5,7 @@
     "require": {
         "php": ">=7.2",
         "ksmz/nana": "~0.1",
-        "illuminate/support": "~6.0|7.0",
+        "illuminate/support": "~6.0|~7.0",
         "illuminate/config": "~6.0|~7.0"
     },
     "autoload": {
